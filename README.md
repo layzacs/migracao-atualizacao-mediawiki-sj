@@ -100,6 +100,8 @@ A extensão GoogleDocTag insere um documento do Google Docs na página da wiki.
 Instalação feita baixando os [arquivos da extensão](https://www.mediawiki.org/wiki/Extension:GoogleDocTag) e adicionando-os à pasta `/extensoes` do diretório raiz da instalação do mediawiki. No arquivo LocalSettings.php é adicionado a linha `require_once "$IP/extensions/GoogleDocTag/GoogleDocTag.php";`
 
 ### Math
+Para instalação da extensão basta baixar os arquivos disponíveis na [página da extensão](https://www.mediawiki.org/wiki/Extension:Math/pt-br) e adicionar a linha a seguir no arquivo LocalSettings.php da sua mediawiki: `wfLoadExtension( 'Math' );`
+
 A extensão Math, dependendo da configuração, faz uso do utilitário Texvc para renderização das equações. Este utilitário, por sua vez, não vem instalado junto com a imagem mediawiki da Bitnami. Ao instalar a extensão, em vez de ela mostrar as equações, a wiki devolvia o erro abaixo:
 `Falhou ao verificar gramática (O executável <code>texvc</code> não foi encontrado. Consulte math/README para instruções da configuração.)`
 Para resolver o problema basta inserir as duas linhas abaixo no arquivo LocalSettings.php:
